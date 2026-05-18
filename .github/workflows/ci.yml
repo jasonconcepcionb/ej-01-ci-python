@@ -3,10 +3,8 @@ name: CI Python
 on:
   push:
     branches: [main]
-
-defaults:
-  run:
-    working-directory: ej-01-ci-python
+  pull_request:
+    branches: [main]
 
 jobs:
   lint:
